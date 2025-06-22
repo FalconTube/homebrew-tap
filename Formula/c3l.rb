@@ -5,21 +5,21 @@
 class C3l < Formula
   desc "Use your clipboard to interact with Ollama."
   homepage "https://github.com/FalconTube/c3l"
-  version "0.4.1"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/FalconTube/c3l/releases/download/v0.4.1/c3l_Darwin_x86_64.tar.gz"
-      sha256 "e0ad6bd55435a2698054eb6b1f56eb43bb995bc7de1053c1fc1f3b9bcc29e804"
+      url "https://github.com/FalconTube/c3l/releases/download/v0.5.0/c3l_Darwin_x86_64.tar.gz"
+      sha256 "67629e53b1015eef600c448ae641f2de77226714b9eb6f6ec18ffea49adb6a39"
 
       def install
         bin.install "c3l"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/FalconTube/c3l/releases/download/v0.4.1/c3l_Darwin_arm64.tar.gz"
-      sha256 "8c6aa7e25fc9df3d79811e4457f9054d495321255b0f27f1a3b696a7062c446c"
+      url "https://github.com/FalconTube/c3l/releases/download/v0.5.0/c3l_Darwin_arm64.tar.gz"
+      sha256 "b1afd053e1a55cbc4d4b8c731518d9fb2755433c7515b3e2da44d0d236387b97"
 
       def install
         bin.install "c3l"
@@ -29,22 +29,22 @@ class C3l < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/FalconTube/c3l/releases/download/v0.4.1/c3l_Linux_x86_64.tar.gz"
-      sha256 "ebb633c252316de03a00b14ea9b7c3f9c50b0ed24d1fed47fe7b9778c560a532"
+      url "https://github.com/FalconTube/c3l/releases/download/v0.5.0/c3l_Linux_x86_64.tar.gz"
+      sha256 "34d6c05ae6aff0d32da1d650ef5abe5087f6ea792654dd42b79354b43cb5ac66"
       def install
         bin.install "c3l"
       end
     end
     if Hardware::CPU.arm? and !Hardware::CPU.is_64_bit?
-      url "https://github.com/FalconTube/c3l/releases/download/v0.4.1/c3l_Linux_armv6.tar.gz"
-      sha256 "713e7227dfb48c7d55047c70c8a309fea097262f08979753f97994598f6e9ba0"
+      url "https://github.com/FalconTube/c3l/releases/download/v0.5.0/c3l_Linux_armv6.tar.gz"
+      sha256 "424acca661adefab162ea2dab4baa71501d1cce84c680d4258240b049f3872af"
       def install
         bin.install "c3l"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/FalconTube/c3l/releases/download/v0.4.1/c3l_Linux_arm64.tar.gz"
-      sha256 "59e186b33cf026f3892cd51bccba96459fed472ad8bc0506b3f678011d43f0fa"
+      url "https://github.com/FalconTube/c3l/releases/download/v0.5.0/c3l_Linux_arm64.tar.gz"
+      sha256 "ad79c9e16927747f6aa6ffc61f5cc62e40a8487d0313f285c6e9a7b65e9f45bb"
       def install
         bin.install "c3l"
       end
